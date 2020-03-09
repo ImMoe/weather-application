@@ -44,7 +44,7 @@ app.post("/", function(req, res) {
     }
   );
 });
-
-app.listen(1232, function() {
+const PORT = process.env.PORT || 1232;
+app.listen(PORT, function() {
   console.log("Server running on port 1232");
 });
