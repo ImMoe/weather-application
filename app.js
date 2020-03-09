@@ -18,7 +18,7 @@ app.get("/", function(req, res) {
 
 app.post("/", function(req, res) {
   const city = req.body.city;
-  const apiKey = "db4c8a7b334fe22c02f9ff8bce0060ed";
+  const apiKey = "YOURAPIKEY";
   const units = "metric";
   if (city == "") {
     return res.render("index", { message: "Please enter a city name" });
